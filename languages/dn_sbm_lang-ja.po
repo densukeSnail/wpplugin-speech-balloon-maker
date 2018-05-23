@@ -12,14 +12,71 @@ msgstr ""
 "Last-Translator: densuke <notgeek@dn-voice.info>\n"
 "Language-Team: densuke <notgeek@dn-voice.info>\n"
 
+msgid "Speech Balloon Maker"
+msgstr "ふきだしメーカー"
+
 msgid "Speech Balloon Maker Settings"
 msgstr "ふきだしメーカー設定画面"
 
-msgid "Left side icon image : "
-msgstr "左側のアイコン : "
+msgid "Image for balloon"
+msgstr "ふきだし用画像"
 
-msgid "Right side icon image : "
-msgstr "右側のアイコン : "
+msgid "Icon image display at left side : "
+msgstr "左側に表示されるアイコン : "
+
+msgid "Icon image display at right side : "
+msgstr "右側に表示されるアイコン : "
 
 msgid "Select Image"
 msgstr "画像を選択"
+
+msgid "Usage"
+msgstr "使い方"
+
+msgid "Copy this shortcode and Paste on your post edit."
+msgstr "以下のショートコードをコピーして、投稿編集画面に貼りつけてください。"
+
+msgid "balloon-l"
+msgstr "fuki-l"
+
+msgid "balloon-r"
+msgstr "fuki-r"
+
+msgid "This is a Sample."
+msgstr "これはサンプルです。"
+
+msgid "Select style"
+msgstr "ふきだしスタイル"
+
+msgid "default"
+msgstr "デフォルト"
+
+msgid "border"
+msgstr "ボーダー"
+
+msgid "imagine"
+msgstr "イメージ"
+
+msgid "curve"
+msgstr "カーブ"
+
+msgid "Name under icon"
+msgstr "アイコン下の名前"
+
+msgid "Left side icon name"
+msgstr "左側アイコンの名前"
+
+msgid "Right side icon name"
+msgstr "右側アイコンの名前"
+
+msgid "Available parameters"
+msgstr "利用可能なパラメータ"
+
+msgid "You can use these parameters to change style individually."
+msgstr "ショートコードに以下のパラメータを使うことで、個別に変更が可能です。"
+
+msgid "Quick tag"
+msgstr "クイックタグ"
+
+msgid "Do not display Quick Tag at Edit Post"
+msgstr "投稿画面でクイックタグを表示しない"

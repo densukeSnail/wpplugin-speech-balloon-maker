@@ -1,0 +1,17 @@
+input[readonly].dn_sbm_shortcode_sample{
+    width:400px;
+    background-color: white;
+}
+
+.dn_sbm_usage_box{
+    width:400px;
+}
+
+input[name='dn_sbm_input_balloon_style'] + label{
+    margin-right:20px;
+}
+
+.dn_sbm_ul{
+    list-style: disc;
+    margin-left:20px;
+}
