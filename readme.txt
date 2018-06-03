@@ -4,7 +4,7 @@ Tags: balloon, bubble, fukidashi
 Donate link: https://www.amazon.co.jp/hz/wishlist/ls/395GOI706MZLO
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,13 +27,16 @@ You can also change style at shortcode parameter ex. \[baloon-r name='foo' style
 
 == Changelog ==
 
+= 1.0.2 =
+bug fix
+
 = 1.0.1 =
 * add prefix to balloon style class
 
 = 1.0 =
 * New release.
 
-== Upgrade Notice == 
+== Upgrade Notice ==
 
 = 1.0.1 =
 * add prefix to balloon style class
@@ -42,4 +45,3 @@ You can also change style at shortcode parameter ex. \[baloon-r name='foo' style
 * New release.
 
 == Screenshots ==
-

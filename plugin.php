@@ -3,7 +3,7 @@
 Plugin Name: Speech Balloon Maker
 Plugin URI:
 Description: This plugin can make speech balloon as you like.
-Version: 1.0.1
+Version: 1.0.2
 Author: densuke
 Author URI: https://engineering.dn-voice.info/
 License: GPL2
@@ -209,9 +209,9 @@ if( !class_exists('dn_sbm_baloonmakerclass') ){
             <p><?php echo $this->lang['copypaste']; ?></p>
             <div class="dn_sbm_usage_box">
                 <p><input type="text" class="dn_sbm_shortcode_sample" readonly onclick="this.select();" value="<?php echo '[' . $this->lang['balloon_r'] . ']' . $this->lang['thisissample'] . '[/' . $this->lang['balloon_r'] . ']'; ?>"></p>
-                <?php echo $this->fukidashiFunc('', $this->lang['thisissample'] , 'right'); ?>
+                <?php echo $this->fukidashiFunc('', $this->lang['thisissample'] , 'dn_sbm_right'); ?>
                 <p><input type="text"  class="dn_sbm_shortcode_sample" readonly onclick="this.select();" value="<?php echo '[' . $this->lang['balloon_l'] . ']' . $this->lang['thisissample'] . '[/' . $this->lang['balloon_l'] . ']'; ?>"></p>
-                <?php echo $this->fukidashiFunc('', $this->lang['thisissample'] , 'left'); ?>
+                <?php echo $this->fukidashiFunc('', $this->lang['thisissample'] , 'dn_sbm_left'); ?>
             </div>
 
             &nbsp;
@@ -233,10 +233,10 @@ if( !class_exists('dn_sbm_baloonmakerclass') ){
 
         /** ふきだしショートコードここから **/
         function fukidashiFunc($attr, $content , $direction){
-            if( strcasecmp($direction , "left") ){
+            if( strcasecmp($direction , "dn_sbm_left") ){
                 $option_icon = self::$settingparams['l_icon'];
                 $option_name = self::$settingparams['l_name'];
-            }else if( strcasecmp($direction , "right") ){
+            }else if( strcasecmp($direction , "dn_sbm_right") ){
                 $option_icon = self::$settingparams['r_icon'];
                 $option_name = self::$settingparams['r_name'];
             }
@@ -257,7 +257,9 @@ if( !class_exists('dn_sbm_baloonmakerclass') ){
         	$content = preg_replace('/\<p\>|\<\/p\>/', '', $content);
 
             /* アイコンイメージの設定 */
-            $imgsrc = esc_attr( empty( $tmp = get_option( $option_icon )) ? plugins_url('images/dn_sbm_default.png', __FILE__) : $tmp );
+            $tmp = get_option( $option_icon );
+            $imgsrc = empty( $tmp ) ? plugins_url('images/dn_sbm_default.png', __FILE__) : $tmp ;
+            $imgsrc = esc_attr($imgsrc);
             if( array_key_exists('img' , $attr) ){
                 $imgsrc = esc_attr( $attr['img'] );
             }
@@ -274,11 +276,11 @@ if( !class_exists('dn_sbm_baloonmakerclass') ){
         }
 
         function fukidashiLeftFunc($attr, $content = null){
-        	return $this->fukidashiFunc($attr, $content ,"left");
+        	return $this->fukidashiFunc($attr, $content ,"dn_sbm_left");
         }
 
         function fukidashiRightFunc($attr, $content = null){
-        	return $this->fukidashiFunc($attr, $content ,"right");
+        	return $this->fukidashiFunc($attr, $content ,"dn_sbm_right");
         }
         /** ふきだしショートコードここまで **/
 

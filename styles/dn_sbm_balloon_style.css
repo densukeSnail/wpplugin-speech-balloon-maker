@@ -7,7 +7,7 @@
 	clear:both;
 }
 
-.content_body img.dn_sbm_fukidashiimg, .dn_sbm_fukidashiimg{
+.content_body img.dn_sbm_fukidashiimg, .single-content img.dn_sbm_fukidashiimg, .dn_sbm_fukidashiimg{
 	display: inline-block;
 	width: 60px;
 	height:60px;
@@ -17,10 +17,10 @@
     line-height: 18px;
     width: 60px;
 }
-.dn_sbm_fukidashi.right .dn_sbm_fukidashiiconbox{
+.dn_sbm_fukidashi.dn_sbm_right .dn_sbm_fukidashiiconbox{
 	float:left;
 }
-.dn_sbm_fukidashi.left .dn_sbm_fukidashiiconbox{
+.dn_sbm_fukidashi.dn_sbm_left .dn_sbm_fukidashiiconbox{
 	float:right;
 }
 
@@ -33,11 +33,11 @@
     margin-bottom: 12px;
 }
 
-.dn_sbm_fukidashi.right .dn_sbm_fukidashicontent{
+.dn_sbm_fukidashi.dn_sbm_right .dn_sbm_fukidashicontent{
     float:left;
     margin-left:15px;
 }
-.dn_sbm_fukidashi.left .dn_sbm_fukidashicontent{
+.dn_sbm_fukidashi.dn_sbm_left .dn_sbm_fukidashicontent{
     float:right;
     margin-right:15px;
 }
@@ -55,23 +55,23 @@
 /* 全デザイン共通設定ここまで */
 
 /* デフォルトデザイン */
-.dn_sbm_fukidashi.default.right .dn_sbm_fukidashicontent, .dn_sbm_fukidashi.default.left .dn_sbm_fukidashicontent{
+.dn_sbm_fukidashi.default.dn_sbm_right .dn_sbm_fukidashicontent, .dn_sbm_fukidashi.default.dn_sbm_left .dn_sbm_fukidashicontent{
     color: #555;
     background: #c8dfff;
     max-width:calc(100% - 85px);
 }
-.dn_sbm_fukidashi.default.right .dn_sbm_fukidashicontent:before, .dn_sbm_fukidashi.default.left .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.default.dn_sbm_right .dn_sbm_fukidashicontent:before, .dn_sbm_fukidashi.default.dn_sbm_left .dn_sbm_fukidashicontent:before{
     content: "";
     position: absolute;
     top: 10px;
     border: 8px solid transparent;
 }
 
-.dn_sbm_fukidashi.default.right .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.default.dn_sbm_right .dn_sbm_fukidashicontent:before{
     left: -17px;
     border-right: 10px solid #c8dfff;
 }
-.dn_sbm_fukidashi.default.left .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.default.dn_sbm_left .dn_sbm_fukidashicontent:before{
 	left: 100%;
 	border-left: 10px solid #c8dfff;
 }
@@ -79,40 +79,40 @@
 
 
 /* ボーダーデザイン */
-.dn_sbm_fukidashi.border.right .dn_sbm_fukidashicontent, .dn_sbm_fukidashi.border.left .dn_sbm_fukidashicontent{
+.dn_sbm_fukidashi.border.dn_sbm_right .dn_sbm_fukidashicontent, .dn_sbm_fukidashi.border.dn_sbm_left .dn_sbm_fukidashicontent{
     color: #000;
     background: #fff;
     border: solid 2px #555;
     max-width:calc(100% - 85px);
 }
-.dn_sbm_fukidashi.border.right .dn_sbm_fukidashicontent:before, .dn_sbm_fukidashi.border.left .dn_sbm_fukidashicontent:before {
+.dn_sbm_fukidashi.border.dn_sbm_right .dn_sbm_fukidashicontent:before, .dn_sbm_fukidashi.border.dn_sbm_left .dn_sbm_fukidashicontent:before {
     content: "";
     position: absolute;
     top: 12px;
     border: 8px solid transparent;
 }
 
-.dn_sbm_fukidashi.border.right .dn_sbm_fukidashicontent:after, .dn_sbm_fukidashi.border.left .dn_sbm_fukidashicontent:after {
+.dn_sbm_fukidashi.border.dn_sbm_right .dn_sbm_fukidashicontent:after, .dn_sbm_fukidashi.border.dn_sbm_left .dn_sbm_fukidashicontent:after {
     content: "";
     position: absolute;
     top: 12px;
     border: 8px solid transparent;
 }
 
-.dn_sbm_fukidashi.border.right .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.border.dn_sbm_right .dn_sbm_fukidashicontent:before{
     left: -19px;
     border-right: 10px solid #555555;
 }
-.dn_sbm_fukidashi.border.right .dn_sbm_fukidashicontent:after{
+.dn_sbm_fukidashi.border.dn_sbm_right .dn_sbm_fukidashicontent:after{
     left: -16px;
     border-right: 10px solid #ffffff;
 }
 
-.dn_sbm_fukidashi.border.left .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.border.dn_sbm_left .dn_sbm_fukidashicontent:before{
 	right: -19px;
 	border-left: 10px solid #555555;
 }
-.dn_sbm_fukidashi.border.left .dn_sbm_fukidashicontent:after{
+.dn_sbm_fukidashi.border.dn_sbm_left .dn_sbm_fukidashicontent:after{
     right: -16px;
 	border-left: 10px solid #ffffff;
 }
@@ -127,10 +127,10 @@
     max-width:calc(100% - 105px);
 }
 
-.dn_sbm_fukidashi.right.imagine .dn_sbm_fukidashicontent{
+.dn_sbm_fukidashi.dn_sbm_right.imagine .dn_sbm_fukidashicontent{
     margin-left:35px;
 }
-.dn_sbm_fukidashi.left.imagine .dn_sbm_fukidashicontent{
+.dn_sbm_fukidashi.dn_sbm_left.imagine .dn_sbm_fukidashicontent{
     margin-right:35px;
 }
 
@@ -153,16 +153,16 @@
     height: 15px;
     top: 4px;
 }
-.dn_sbm_fukidashi.imagine.right .dn_sbm_fukidashicontent:before {
+.dn_sbm_fukidashi.imagine.dn_sbm_right .dn_sbm_fukidashicontent:before {
     left: -29px;
 }
-.dn_sbm_fukidashi.imagine.right .dn_sbm_fukidashicontent:after {
+.dn_sbm_fukidashi.imagine.dn_sbm_right .dn_sbm_fukidashicontent:after {
     left: -19px;
 }
-.dn_sbm_fukidashi.imagine.left .dn_sbm_fukidashicontent:before {
+.dn_sbm_fukidashi.imagine.dn_sbm_left .dn_sbm_fukidashicontent:before {
     right: -29px;
 }
-.dn_sbm_fukidashi.imagine.left .dn_sbm_fukidashicontent:after {
+.dn_sbm_fukidashi.imagine.dn_sbm_left .dn_sbm_fukidashicontent:after {
     right: -19px;
 }
 /* 想像デザインここまで */
@@ -189,10 +189,10 @@
     background-color:#c8dfff;
     z-index:-1;
 }
-.dn_sbm_fukidashi.curve.right .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.curve.dn_sbm_right .dn_sbm_fukidashicontent:before{
     left:10px;
 }
-.dn_sbm_fukidashi.curve.left .dn_sbm_fukidashicontent:before{
+.dn_sbm_fukidashi.curve.dn_sbm_left .dn_sbm_fukidashicontent:before{
 	right: 10px;
 }
 
@@ -206,10 +206,10 @@
     background-color:#fff;
     z-index:-1;
 }
-.dn_sbm_fukidashi.curve.right .dn_sbm_fukidashicontent:after{
+.dn_sbm_fukidashi.curve.dn_sbm_right .dn_sbm_fukidashicontent:after{
     left:20px;
 }
-.dn_sbm_fukidashi.curve.left .dn_sbm_fukidashicontent:after{
+.dn_sbm_fukidashi.curve.dn_sbm_left .dn_sbm_fukidashicontent:after{
 	right: 20px;
 }
 /* カーブデザインここまで */
